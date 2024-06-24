@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    /* 1em = 10px */
+}
+h1{
+    font-family: "Outfit", sans-serif;
+    font-size: 5.6rem;
+}
+p{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.8rem;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    --main:#036230;
+    --sub-main:#A0C239;
+    --cream:#FFFAE9;
+    --white:#fff;
+    --black:#0B0B0B;
+    
+    padding: 0px 187px;
+    background-color: var(--main);
+}
+
+/* ============================================================= */
