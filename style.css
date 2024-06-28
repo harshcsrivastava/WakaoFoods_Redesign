@@ -250,3 +250,78 @@ header{
     
     
 }
+
+/* ===========================RECIPE PAGE================================== */
+
+#recipes{
+    width: 106.457rem;
+    height: 67rem;
+    margin-top: 100px;
+}
+#recipe-logo{
+    width: 30.2rem;
+    height: 7.02rem;
+    
+}   
+#recipe-logo img{
+    width: 100%;
+    height: 100%;
+}
+
+#logo_text{
+    /* width: 22.9rem; */
+    height: 2.1rem;
+
+}
+
+#logo_text p{
+    /* width: 100%; */
+    height: 100%;
+    font-family:Roboto;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: var(--cream);
+}
+#recipe_card{
+    /* padding: 0 0; */
+
+    width: 106.457rem;
+    height: 57.88rem;
+    display: flex;
+    margin-top: 7.5rem;
+    gap: 2.83rem;
+}
+
+#recipe_card1{
+    width: 32.65rem;
+    height: 42.12rem;
+    background-color: var(--sub-main);
+}
+#image1{
+    width: 27.9rem;
+    height: 23.5rem;
+    
+}
+
+
+
+#recipe_card2{
+    width: 32.65rem;
+    height: 42.12rem;
+    background-color: var(--sub-main);
+}
+#recipe_card3{
+    width: 32.65rem;
+    height: 42.12rem;
+    background-color: var(--sub-main);
+}
+#recipe_card4{
+    width: 32.65rem;
+    height: 42.12rem;
+    background-color: var(--sub-main);
+}
+#recipe_card5{
+    width: 32.65rem;
+    height: 42.12rem;
+    background-color: var(--sub-main);
+}
