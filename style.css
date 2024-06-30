@@ -1218,13 +1218,13 @@ header{
     width: 106.5rem;
     height: 74.1rem;
     margin-top: 5rem;
-    background-color: var(--sub-main);
+    /* background-color: var(--sub-main); */
 }
 #why_media{
     position: relative;
     width:106.5rem ;
     height: 43.8rem;
-    background-color: pink;
+    background-color: var(--sub-main);
     margin-top: 3.4rem;
 }
 #why_media img{
@@ -1277,7 +1277,7 @@ align-items: center;
     width:34.5rem ;
     height: 18.5rem;
     padding: 2rem;
-    background-color: violet;
+    background-color: var(--sub-main);
     display: flex;
     align-items: center;
     gap: 3.6rem;
@@ -1286,6 +1286,10 @@ align-items: center;
     -moz-border-radius: 1.6rem;
     -ms-border-radius: 1.6rem;
     -o-border-radius: 1.6rem;
+}
+#why_hospitality:hover{
+    background-color: var(--main);
+    color: var(--cream);
 }
 #why_hospitality img{
     width: 12.4rem;
@@ -1315,7 +1319,7 @@ align-items: center;
     width: 34.5rem;
     height: 18.5rem;
     padding: 2rem;
-    background-color: aquamarine;
+    background-color:var(--sub-main);
     display: flex;
     align-items: center;
     gap: 3.6rem;
@@ -1324,9 +1328,12 @@ align-items: center;
     -moz-border-radius: 1.6rem;
     -ms-border-radius: 1.6rem;
     -o-border-radius: 1.6rem;
-
-
 }
+#why_vogue:hover{
+    background-color: var(--main);
+    color: var(--cream);
+}
+
 #why_vogue img{
     width: 12.3rem;
     height: 6.9rem;
@@ -1352,7 +1359,7 @@ align-items: center;
     width: 34.5rem;
     height:18.5rem ;
     padding: 2rem;
-    background-color: antiquewhite;
+    background-color: var(--sub-main);
     display: flex;
     align-items: center;
     gap: 3.6rem;
@@ -1361,6 +1368,10 @@ align-items: center;
     -moz-border-radius: 1.6rem;
     -ms-border-radius: 1.6rem;
     -o-border-radius: 1.6rem;
+}
+#why_better:hover{
+    background-color: var(--main);
+    color: var(--cream);
 }
 
 #why_better img{
@@ -1373,7 +1384,7 @@ align-items: center;
 
 }
 #why_better-text p:nth-child(1){
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     font-weight: 700;
     line-height: 2.772rem;
     font-family: Outfit;
