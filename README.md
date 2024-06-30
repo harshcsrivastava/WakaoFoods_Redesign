@@ -1,4 +1,3 @@
-# reimagine_wakaoFoods
 # Wakao Foods Redesign Project
 
 This project involves the redesign of the website for Wakao Foods, a company specializing in [healthy and sustainable food products](https://www.wakaofoods.com/).
