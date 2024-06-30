@@ -5,7 +5,7 @@
 }
 html{
     font-size: 62.5%;
-    /* 1em = 10px */
+    /* 1rem = 10px */
 }
 h1, h2{
     font-family: "Outfit", sans-serif;
@@ -21,7 +21,11 @@ ul{
 }
 a{
     text-decoration: none;
+    color: var(--white);
 }
+a:link:active, a:visited:active {
+    color: var(--white);
+  }
 body{
     --main:#036230;
     --sub-main:#A0C239;
@@ -29,16 +33,113 @@ body{
     --white:#fff;
     --black:#0B0B0B;
     
-    padding: 0px 187px;
     background-color: var(--main);
 }
 
-/* ============================================================= */
+/* =============================Header================================ */
+
+nav{
+    width: 100%;
+    height: 11rem;
+    position: fixed;
+    padding: 0px 187px;
+    font-family: "Outfit", sans-serif;
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    transition: background-color 0.4s ease-in-out;
+    z-index: 1;
+
+    & a{
+        transition: color 0.4s ease-in-out;
+    }
+
+    & .nav-first{
+        width: 50.6rem;
+        height: 10rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+            & #logo{
+                width: 10rem;
+            }
+
+            & .menu{
+                width: 32rem;
+                display: flex;
+                justify-content:space-between;
+                font-size: 1.6rem;
+            }
+            & .nav-hover{
+                position: relative;
+            }
+            
+            & .nav-hover::before{
+                transition: 300ms;
+                height: 2.5px;
+                content: "";
+                position: absolute;
+                background-color: var(--cream);
+                width: 0%;  
+                bottom: -8px;           
+            }
+    
+            & .nav-hover:hover::before {
+                width: 100%;
+              }
+    }
+    
+
+    & .nav-last{
+        width: 16.5rem;
+        height: 10rem;
+        display: flex;
+        align-items: center;
+        
+        & .access-icons{
+            width: 12.4rem;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+        }
+    }
+}
+
+.scrolled{
+    top: 0;
+    width: 100%;
+    background-color: var(--cream);
+}
+.scrolled .menu a{
+    color: var(--black);
+    font-weight: normal;
+}
+.nav-hover-black{
+    position: relative;
+}
+.nav-hover-black::before{
+    transition: 300ms;
+    height: 2.5px;
+    content: "";
+    position: absolute;
+    background-color: var(--black);
+    width: 0%;  
+    bottom: -8px;           
+}
+
+.nav-hover-black:hover::before {
+    width: 100%;
+  }
+
 header{
     color: var(--white);
     font-family: "Outfit", sans-serif;
     width: 100%;
     height: 100vh;
+    padding: 0px 187px;
     
         display: flex;
         justify-content: space-between;
@@ -49,33 +150,14 @@ header{
         }
 
         & .first{
-            padding-top: 1.5rem;
+            padding-top: 22rem;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             width: 63rem;
             height: 100vh;
-            gap: 7rem;
+            gap: 7rem; 
                 
-                & .nav-first{
-                    width: 100%;
-                    height: 10rem;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    padding-right: 12.4rem;
-                        & #logo{
-                            width: 10rem;
-                        }
-            
-                        & #menu{
-                            width: 32rem;
-                            display: flex;
-                            justify-content:space-between;
-                            font-size: 1.6rem;
-                        }
-                }
-
                 & .head{
                     height: 100%;
                     display: flex;
@@ -110,59 +192,49 @@ header{
                             font-weight: normal;
                             color: var(--main);
                         }
+                        & .cta-arrow{
+                            width: "1.552rem";
+                        }
+                    }
+                    & .cta-button:hover{
+                        background-color: transparent;
+                        border: solid 0.2rem var(--cream);
+                        & h2{
+                            color: var(--cream);
+                        }
                     }
                 }
         }
 
         & .mid{
-            height: 78.7rem;
-            width: 25.5rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            
+            height: 100vh;
             background-color: var(--sub-main);
+            overflow: hidden;
 
+           
             & .product-wheel{
+                height: 75vh;
+                width: 25.5rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 position: relative;
-                bottom: 23%;
+                top: -35%;
 
-                & #americanherbs{
-                    position: relative;
-                    bottom: 12%;
-                }
-
-                & #rawjack{
-                    position: relative;
-                    top: 6%;
-                }
                 & .prod{
-                    width: 25.2rem;
+                    height: 50vh;
+                    position: absolute;
+                    transition: transform 0.8s ease-in-out;
                 }
             }
-        }
+        } 
 
         & .last{
-            padding-top: 1.5rem;
+            padding-top: 22.5rem;
             width: 18.2rem;
             height: 100vh;
-            
-            & .nav-last{
-                width: 100%;
-                height: 10rem;
-                display: flex;
-                align-items: center;
 
-                padding-left: 3.8rem;
-                & #access-icons{
-                    width: 12.4rem;
-                    display: flex;
-                    justify-content:space-between;
-                    align-items: center;
-                }
-            }
-
-            & .callToAction{
+            .callToAction{
                 height: 70%;
                 width: 100%;
                 
@@ -176,7 +248,8 @@ header{
                     flex-direction: column;
                     justify-content: space-evenly;
                     align-items: center;
-
+                    position: relative;
+            
                     & .arrow{
                         width: 4rem;
                         height: 4rem;
@@ -193,7 +266,17 @@ header{
                             transform: rotate(90deg);
                         }
                     }
-    
+                    & .arrow:hover{
+                        background-color: transparent;
+                        border: solid 0.2rem var(--cream);
+                        & #top-arrow{
+                            transform: rotate(-90deg);
+                        }
+                        & #bottom-arrow{
+                            transform: rotate(90deg);
+                        }
+                    }
+            
                     & .pop-up{
                         width: 16.5rem;
                         height: 12.9rem;
@@ -202,31 +285,35 @@ header{
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
-    
+                        position: relative;
+            
                         & .popup-data{
                             width: 100%;
                             height: 10.5rem;
                             background-color: var(--cream);
                             border-radius: 0.9rem;
                             padding:1.1rem 1.1rem 2.2rem 1.1rem;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 5px;
                             
                             & #prod-title{
                                 font-size: 2rem;
                             }
-                            & #prod-prize{
+                            & #prod-price{
                                 font-size: 1.2rem;
                             }
-    
+            
                             & .prod-descrip{
                                 display: flex;
                                 justify-content: space-between;
-    
+            
                                 & .rating{
                                     width: 1.46rem;
                                 }
                             }
                         }
-    
+            
                         & .plus{
                             width: 2.4rem;
                             height: 2.4rem;
@@ -237,8 +324,8 @@ header{
                             align-items: center; 
                             border: 0.25rem solid var(--main);
                             position: absolute;
-                            bottom: 39.8%;
-    
+                            bottom: 0;
+            
                             & #plus{
                                 width: 15rem;
                             }
@@ -246,7 +333,5 @@ header{
                     }
                 }
             }
-        }
-    
-    
+          }    
 }

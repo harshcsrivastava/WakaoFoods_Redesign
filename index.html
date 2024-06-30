@@ -10,17 +10,26 @@
     <title>ReImagine - Wakao Foods</title>
 </head>
 <body>
-    
+    <nav class="nav" id="navbar">
+        <div class="nav-first">
+            <img src="./images/logo.svg" alt="wakao logo" srcset="" id="logo">
+            <ul class="menu">
+                <a href="#" target="_blank" class="navag nav-hover" id="products"><li>Products</li></a>
+                <a href="#" target="_blank" class="navag nav-hover" id="media"><li>Spotlights</li></a>
+                <a href="#footer" id="more" class="navag nav-hover"><li>More</li></a>
+            </ul>
+        </div>
+        <div class="nav-last">
+            <ul class="access-icons">
+                <li><img src="./images/icons/search.svg" alt="search icon" srcset="" class="icons" id="search"></li>
+                <li><img src="./images/icons/user.svg" alt="user icon" srcset="" class="icons" id="user"></li>
+                <li><img src="./images/icons/cart.svg" alt="cart icon" srcset="" class="icons" id="cart"></li>
+            </ul>
+        </div>
+    </nav>
     <header>
         <div class="first">
-            <div class="nav-first">
-                <img src="./images/logo.svg" alt="wakao logo" srcset="" id="logo">
-                <ul id="menu">
-                    <li>Products</li>
-                    <li>Spotlights</li>
-                    <li>More</li>
-                </ul>
-            </div>
+            
            <div class="head">
                 <div class="hero-details">
                     <div class="heading">
@@ -30,32 +39,28 @@
                         <p><span style="color:#A0C239;">Free Shipping</span> on orders over ₹499.00</p>
                     </div>
                 </div>
-                <a href="https://www.wakaofoods.com/collections/products" target="_blank">
+                <a href="#" target="_blank">
                     <div class="cta-button">
                         <h2>EXPLORE MORE</h2>
-                        <img src="./images/icons/arrowGreen.svg" alt="redirecting arrow" srcset="">
+                        <img src="./images/icons/arrowGreen.svg" alt="redirecting arrow" srcset="" class="cta-arrow">
                     </div>
                 </a>
            </div>
         </div>
         <div class="mid">
-                <div class="product-wheel">
-                    <span id="americanherbs"><img src="./images/products/americanHerbs.svg" alt="" srcset="" class="prod"></span>
-                    <img src="./images/products/hot&Spicy.svg" alt="" srcset="" class="prod" id="hot">
-                    <img src="./images/products/rawjack.svg" alt="" srcset="" class="prod" id="rawjack">
-                </div>
+            <div class="product-wheel">
+                <img src="./images/products/americanHerbs.svg" alt="" srcset="" class="prod" id="americanherbs">
+                <img src="./images/products/hot&Spicy.svg" alt="" srcset="" class="prod" id="hot">
+                <img src="./images/products/rawjack.svg" alt="" srcset="" class="prod" id="rawjack">
+                <img src="./images/products/butterjack.svg" alt="" srcset="" class="prod" id="butterjack">
+                <img src="./images/products/americanHerbs.svg" alt="" srcset="" class="prod" id="americanherbs">
+            </div>
         </div>
         <div class="last">
-            <div class="nav-last">
-                <ul id="access-icons">
-                    <li><img src="./images/icons/search.svg" alt="search icon" srcset="" class="icons"></li>
-                    <li><img src="./images/icons/user.svg" alt="user icon" srcset="" class="icons"></li>
-                    <li><img src="./images/icons/cart.svg" alt="cart icon" srcset="" class="icons"></li>
-                </ul>
-            </div>
+            
             <div class="callToAction">
                 <div class="button-carrier">
-                    <div class="arrow"><img src="./images/icons/arrowGreen.svg" alt="" srcset="" id="top-arrow"></div>
+                    <div class="arrow top"><img src="./images/icons/arrowGreen.svg" alt="" srcset="" id="top-arrow"></div>
                     <div class="pop-up">
                         <div class="popup-data">
                             <h3 id="prod-title">Hot and Spicy Sausage</h3>
@@ -67,12 +72,12 @@
                                     <img src="./images/icons/star.svg" alt="rating" srcset="" class="rating">
                                     <img src="./images/icons/star.svg" alt="rating" srcset="" class="rating">
                                 </div>
-                                <h6 id="prod-prize">₹325.00</h6>
+                                <h6 id="prod-price">₹<span id="price">325.00</span></h6>
                             </div>
                         </div>
                         <div class="plus"><img src="./images/icons/plus.svg" alt="plus" srcset="" id="plus"></div>
                     </div>
-                    <div class="arrow"><img src="./images/icons/arrowGreen.svg" alt="" srcset="" id="bottom-arrow"></div>
+                    <div class="arrow bot"><img src="./images/icons/arrowGreen.svg" alt="" srcset="" id="bottom-arrow"></div>
                 </div>
             </div>
         </div>
@@ -99,7 +104,7 @@
 
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
 
     </footer>
     <script src="./app.js"></script>
