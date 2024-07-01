@@ -59,38 +59,39 @@ document.addEventListener('DOMContentLoaded', () => {
 /* =================================BENEFIT PAGE==================================*/
 // JavaScript for image sliding animation
 document.addEventListener('DOMContentLoaded', () => {
-    let slider = document.getElementById('ben_slider');
+    let imageSlider = document.getElementById('ben_slider');
+    let headingSlider = document.getElementById('ben_heading_slider');
+    let paraSlider = document.getElementById('ben_para_slider');
     let images = document.querySelectorAll('#ben_slider img');
-    let headingSlider = document.getElementById('ben_heading');
-    let paraSlider = document.getElementById('ben_para');
     let currentIndex = 0;
-    let totalImages = images.length;
+    let totalItems = images.length;
 
     // Function to update the slider position
     function updateSlider() {
-        slider.style.transform = `translateX(-${currentIndex * 100 / totalImages}%)`;
-        headingSlider.style.transform = `translateY(-${currentIndex * 100}%)`;
-        paraSlider.style.transform = `translateY(-${currentIndex * 100}%)`;
+        let percentage = -100 / totalItems * currentIndex;
+        imageSlider.style.transform = `translateX(${percentage}%)`;
+        headingSlider.style.transform = `translateX(${percentage}%)`;
+        paraSlider.style.transform = `translateX(${percentage}%)`;
     }
 
     // Function for auto sliding
     function autoSlide() {
-        currentIndex = (currentIndex + 1) % totalImages;
+        currentIndex = (currentIndex + 1) % totalItems;
         updateSlider();
     }
 
     // Set interval for auto sliding every 3 seconds
-    let autoSlideInterval = setInterval(autoSlide, 2000);
+    let autoSlideInterval = setInterval(autoSlide, 3000);
 
     // Event listeners for arrow clicks
     document.getElementById('ben_arrtop').addEventListener('click', () => {
-        currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+        currentIndex = (currentIndex - 1 + totalItems) % totalItems;
         updateSlider();
         resetInterval(); // Reset interval to avoid quick slides after manual change
     });
 
     document.getElementById('ben_arrbtm').addEventListener('click', () => {
-        currentIndex = (currentIndex + 1) % totalImages;
+        currentIndex = (currentIndex + 1) % totalItems;
         updateSlider();
         resetInterval(); // Reset interval to avoid quick slides after manual change
     });
