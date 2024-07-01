@@ -52,7 +52,7 @@ nav{
     align-items: center;
     background-color: transparent;
     transition: background-color 0.4s ease-in-out;
-    z-index: 1;
+    z-index: 999;
 
     & a{
         transition: color 0.4s ease-in-out;
@@ -1241,4 +1241,138 @@ header{
     line-height: 1.6rem;
     font-family: Outfit;
 
+}
+
+/* ===============================FOOTER ============================== */
+footer {
+    background-color: #036230;
+    padding: 0px 187px;
+    color: white;
+    font-family: Outfit ;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    margin-top: 3.2rem;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.logo {
+    width: 9.6rem;
+    height: 9.6rem;
+    margin-right: 2.9rem;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons img {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1.7rem;
+    /* margin-left: 11rem; */
+}
+/* adding my css */
+#wakao_food{
+    width: 14.9rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+    /* margin-left: 11rem; */
+}
+#wakao_food h4{
+    font-size: 2.4rem;
+    font-weight: 700;
+
+}
+#logo_btm_para{
+    width:26.8rem ;
+    height: 6rem;
+    margin: 1rem 0 2.4rem 0;
+
+}
+#logo_btm_para p{
+    width: 100%;
+    height: 100%;
+    font-family: Roboto;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.9rem;
+    text-align: left;
+
+}
+#footer-section_1{
+    width: 26.8rem;
+    height: 15.5rem;
+    margin-right: 9.6rem;
+}
+
+#commpany{
+    width: 8.9rem;
+    height: 2.5rem;
+}
+.name h4{
+    width: 100%;
+    height: 100%;
+    font-family: Outfit;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25.2px;
+    text-align: left;
+
+
+}
+/* .footer-section h4 {
+    font-size: 1.81rem;
+    margin-bottom: 1rem;
+} */
+
+#footer_right{
+    width: 70.5rem;
+    height: 13.8rem;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+    font-family: Roboto;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-align: left;
+
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    color: rgb(216, 216, 216);
+    margin-top: 2rem;
+}
+
+.footer-bottom hr {
+    border: none;
+    border-top: 1px solid white;
+    margin-bottom: 1rem;
 }
