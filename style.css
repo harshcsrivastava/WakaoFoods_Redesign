@@ -833,7 +833,7 @@ header{
     width: 14rem;
     height: 14rem ;
     padding: 0.3rem;
-    border: 1px dotted var(--black);
+    border: 2px solid var(--black);
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -860,7 +860,7 @@ header{
     width: 14rem;
     height: 14rem ;
     padding: 0.3rem;
-    border: 1px dotted var(--black);
+    border: 2px solid var(--black);
     border-radius: 50%;
 }
 #why_1year p{
@@ -883,7 +883,7 @@ header{
     width: 14rem;
     height: 14rem ;
     padding: 0.3rem;
-    border: 1px dotted var(--black);
+    border: 2px solid var(--black);
     border-radius: 50%;
 }
 #why_fibre p{
@@ -907,7 +907,7 @@ header{
     width: 14rem;
     height: 14rem ;
     padding: 0.3rem;
-    border: 1px dotted var(--black);
+    border: 2px solid var(--black);
     border-radius: 50%;
 }
 #why_sustainable p{
@@ -930,7 +930,7 @@ header{
     width: 14rem;
     height: 14rem ;
     padding: 0.3rem;
-    border: 1px dotted var(--black);
+    border: 2px solid var(--black);
     border-radius: 50%;
 }
 #why_refrigeration p{
@@ -953,7 +953,7 @@ header{
     width: 14rem;
     height: 14rem ;
     padding: 0.3rem;
-    border: 1px dotted var(--black);
+    border: 2px solid var(--black);
     border-radius: 50%;
 }
 #why_preservation p{
