@@ -32,7 +32,9 @@ body{
     --cream:#FFFAE9;
     --white:#fff;
     --black:#0B0B0B;
+    --light-black:rgba(0, 0, 0, 0.5);
     
+    /* padding: 0px 187px; */
     background-color: var(--main);
 }
 
@@ -333,6 +335,7 @@ header{
                     }
                 }
             }
+
           }    
 }
 
@@ -557,3 +560,907 @@ header{
     font-size: 2.4rem;
     color: var(--main);
  }
+
+        /* } */
+    
+/* } */
+
+/* ===========================RECIPE PAGE================================== */
+
+
+
+
+
+#recipes{
+    width: 106.457rem;
+    height: 67rem;
+    margin-top: 100px;
+    padding: 0px 187px;
+}
+#recipe-logo{
+    width: 30.2rem;
+    height: 7.02rem;
+    
+}   
+#recipe-logo img{
+    width: 100%;
+    height: 100%;
+}
+
+#logo_text{
+    height: 2.1rem;
+
+}
+
+#logo_text p{
+    height: 100%;
+    font-family:Roboto;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: var(--cream);
+}
+#recipe_card{
+    width: 106.457rem;
+    height: 57.88rem;
+    display: flex;
+    margin-top: 7.5rem;
+    gap: 2.83rem;
+  
+}
+
+
+#recipe_card1{
+    position: relative;
+    width: 32.65rem;
+    height: 42.12rem;
+    background-color: transparent;
+}
+#image1{
+    position: absolute;
+    width: 27.9rem;
+    height: 23.5rem;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+#anime1{
+    position: absolute;
+    width: 32.6rem;
+    height: 35.1rem;
+    background-color: var(--sub-main);
+    bottom: 0;
+    z-index: 0;
+    transition:height 0.3s, background-color 0.3s;
+    -webkit-transition:height 0.3s, background-color 0.3s;
+    -moz-transition:height 0.3s, background-color 0.3s;
+    -ms-transition:height 0.3s, background-color 0.3s;
+    -o-transition:height 0.3s, background-color 0.3s;
+}
+
+#text_part1{
+    position: absolute;
+    width: 32.7rem;
+    height: 18.5rem;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:2.4rem;
+}
+#foodname_1 p{
+    width: 27.9rem;
+    height: 3.5rem;
+     font-family: Outfit; 
+    font-size: 2.0rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    text-align: left;
+    text-transform: uppercase;
+
+}
+#foodtime_1{
+    display: flex;
+    justify-content: space-between;
+}
+#foodtime_1 p{
+    text-transform: uppercase;
+    
+
+}
+
+ #serve_1 p{
+    font-family: Outfit;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    text-align: left; 
+    
+}
+#serve_1 p:nth-child(1){ 
+    font-weight: 500;
+    font-size: 1.5rem;
+
+ } 
+#prep_min1 p{
+    font-family: Outfit;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    text-align: left; 
+}
+
+#prep_min1 p:nth-child(1){
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+
+
+#recipe_card2{
+    position: relative;
+    width: 32.65rem;
+    height: 42.12rem;
+    background-color: transparent;
+}
+
+
+#image2{
+    position: absolute;
+    width: 27.9rem;
+    height: 23.5rem;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+#anime2{
+    position: absolute;
+    width: 32.6rem;
+    height: 35.1rem;
+    background-color: var(--sub-main);
+    bottom: 0;
+    z-index: 0;
+    transition:height 0.3s, background-color 0.3s;
+    -webkit-transition:height 0.3s, background-color 0.3s;
+    -moz-transition:height 0.3s, background-color 0.3s;
+    -ms-transition:height 0.3s, background-color 0.3s;
+    -o-transition:height 0.3s, background-color 0.3s;
+}
+
+#text_part2{
+    position: absolute;
+    width: 32.7rem;
+    height: 18.5rem;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:2.4rem;
+}
+
+#foodname_2 p{
+    width: 27.9rem;
+    height: 3.5rem;
+     font-family: Outfit; 
+    font-size: 2.0rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    text-align: left;
+    text-transform: uppercase;
+
+}
+#foodtime_2{
+    display: flex;
+    justify-content: space-between;
+}
+#foodtime_2 p{
+    text-transform: uppercase;
+}
+
+#serve_2 p{
+    font-family: Outfit;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    text-align: left;
+    
+}
+#serve_2 p:nth-child(1){
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+#prep_min2 p{
+    font-family: Outfit;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    text-align: left;
+}
+#prep_min2 p:nth-child(1){
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+
+
+#recipe_card3{
+    position: relative;
+    width: 32.65rem;
+    height: 42.12rem;
+    background-color: transparent;
+}
+
+#image3{
+    position: absolute;
+    width: 27.9rem;
+    height: 23.5rem;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+#anime3{
+    position: absolute;
+    width: 32.6rem;
+    height: 35.1rem;
+    background-color: var(--sub-main);
+    bottom: 0;
+    z-index: 0;
+    transition:height 0.3s, background-color 0.3s;
+    -webkit-transition:height 0.3s, background-color 0.3s;
+    -moz-transition:height 0.3s, background-color 0.3s;
+    -ms-transition:height 0.3s, background-color 0.3s;
+    -o-transition:height 0.3s, background-color 0.3s;
+}
+
+#text_part3{
+    position: absolute;
+    width: 32.7rem;
+    height: 18.5rem;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:2.4rem;
+}
+
+#foodname_3 p{
+    width: 27.9rem;
+    height: 3.5rem;
+     font-family: Outfit; 
+    font-size: 2.0rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    text-align: left;
+    text-transform: uppercase;
+
+}
+#foodtime_3{
+    display: flex;
+    justify-content: space-between;
+}
+#foodtime_3 p{
+    text-transform: uppercase;
+}
+
+#serve_3 p{
+    font-family: Outfit;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height:  2.5rem;
+    text-align: left;
+    
+}
+#serve_3 p:nth-child(1){
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+#prep_min3 p{
+    font-family: Outfit;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height:  2.5rem;
+    text-align: left;
+}
+#prep_min3 p:nth-child(1){
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+/* ===========================BENEFITS PAGE================================== */
+
+
+#benefits{
+    position: relative;
+    width: 106.5rem ;
+    height: 59.7rem;
+    padding: 0px 187px;
+    display: flex;
+}
+
+#ben_back{
+    position: absolute;
+    width: 106.5rem;
+    height: 51.5rem;
+    background-color: var(--light-black);
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 0;
+    
+}
+
+#ben_image{
+    position: absolute;
+    width:43.9rem ;
+    height: 52.7rem;
+    top:-8.2rem;
+    margin-left: 4.8rem;
+    overflow: hidden;
+    background-color: var(--sub-main);
+}
+
+#ben_slider{
+    width: 400%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    -webkit-transition: transform 0.5s ease-in-out;
+    -moz-transition: transform 0.5s ease-in-out;
+    -ms-transition: transform 0.5s ease-in-out;
+    -o-transition: transform 0.5s ease-in-out;
+}
+
+#ben_slider img{
+    width: 25%;
+    height: 100%;
+   background-size: cover;
+}
+
+#ben_arrbtm{
+    position: absolute ;
+    width: 4rem ;
+    height: 4rem;
+    border-radius: 50%;
+    background-color:var(--cream);
+    top: 26.9rem;
+    left: calc(43.9rem + 23.5rem - 2rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 2;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+#ben_arrtop{
+    position: absolute;
+    width: 4rem ;
+    height: 4rem;
+    border-radius: 50%;
+    background-color:var(--cream);
+    rotate: 180deg;
+    top: 34.2rem;
+    left: calc(43.9rem + 23.5rem - 2rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 2;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    
+}
+#ben_text{
+    position: absolute;
+    width:40.1rem ;
+    height: 44.5rem;
+    left: 53.2rem;
+    z-index: 1;
+}
+#ben_writing{
+    width: 39.3rem;
+    height:30.9rem ;
+}
+#ben_heading{    
+    width:39.6rem ;
+    height: 18.9rem;
+    overflow: hidden;
+}
+#ben_heading_slider{
+    width: 400%;
+    display: flex;
+    transition: transform 0.5s ease-in-out; 
+    -webkit-transition: transform 0.5s ease-in-out;
+    -moz-transition: transform 0.5s ease-in-out;
+    -ms-transition: transform 0.5s ease-in-out;
+    -o-transition: transform 0.5s ease-in-out;
+}
+#ben_heading_slider p{
+    width: 25%;
+    height: 100%;
+    font-family: Outfit;
+    font-size: 5.0rem;
+    font-weight: 700;
+    line-height: 6.3rem;
+    text-align: left;
+    color: var(--cream);
+    margin: 0;
+}
+
+#ben_para{
+    width: 40.1rem;
+    height: 11.9rem;
+    overflow: hidden;
+    
+}
+#ben_para_slider{
+    width: 400%;
+    display: flex;
+    transition: transform 0.5s ease-in-out; 
+    -webkit-transition: transform 0.5s ease-in-out;
+    -moz-transition: transform 0.5s ease-in-out;
+    -ms-transition: transform 0.5s ease-in-out;
+    -o-transition: transform 0.5s ease-in-out;
+}
+#ben_para_slider p{
+    width: 25%;
+    height: 100%;
+    font-family: Roboto;
+    font-size: 2.005rem;
+    font-weight: 300;
+    line-height: 2.349rem;
+    text-align: left;
+    color: var(--cream);
+    margin: 0;
+
+}
+
+#ben_button{
+    width: 37.3rem;
+    height: 3.3rem;
+    display: flex;
+    gap: 4.5rem;
+    margin: 3.8rem 3.8rem 3.8rem 0;
+}
+#ben_but1{
+    width: 16.4rem;
+    height: 3.3rem;
+    border: 0.065rem solid var(--cream);
+    background-color: transparent;
+    border-radius: 0.475rem;
+    color:var(--cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1.2rem;
+    -webkit-border-radius: 0.475rem;
+    -moz-border-radius: 0.475rem;
+    -ms-border-radius: 0.475rem;
+    -o-border-radius: 0.475rem;
+}
+#ben_button button img {
+    transition: filter 0.3s ease;
+}
+#ben_button button:hover img {
+    filter: brightness(0) saturate(100%) invert(10%) sepia(94%) saturate(6005%) hue-rotate(160deg) brightness(91%) contrast(98%);
+    
+}
+#ben_but1:hover{
+    background-color: white;
+    color: var(--main);
+}
+#ben_but1 i{
+    font-size: 1.55rem;
+    color: var(--cream);
+    
+}
+
+#ben_but2{
+    width: 16.4rem;
+    height: 3.3rem;
+    border: 0.065rem solid var(--cream);
+    background-color: transparent;
+    border-radius: 0.475rem;
+    color: var(--cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    -webkit-border-radius: 0.475rem;
+    -moz-border-radius: 0.475rem;
+    -ms-border-radius: 0.475rem;
+    -o-border-radius: 0.475rem;
+}
+
+#ben_but2:hover{
+    background-color: white;
+    color: var(--main);
+}
+#ben_but2 i{
+    font-size: 1.55rem;
+    color:var(--cream);
+}
+
+
+
+/* ===============================Why Wakao ============================== */
+
+
+
+
+
+#why_wakao{
+  
+    padding: 12.1rem 18.7rem 0 18.7rem;
+    background-color: var(--cream);
+
+}
+#why_main{
+    width: 106.5rem;
+    height: 114.7rem;
+   
+
+}
+
+#why_top{
+    
+    width: 106.5rem;
+    height: 30.9rem;
+
+} 
+#why_top img{
+
+    width: 32.9rem;
+    height: 7.02rem;
+  
+}
+#why_reason{
+    width: 106.5rem;
+    height: 18.5rem;
+    margin-top: 5.38rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+#why_rtc{
+    width: 15.4rem;
+    height: 18.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#why_rtc img{
+    width: 14rem;
+    height: 14rem ;
+    padding: 0.8rem;
+    border: 2px dotted var(--black);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+#why_rtc p{
+    font-family: Outfit;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.52rem;
+
+}
+
+#why_1year{
+    width: 15.4rem;
+    height: 18.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#why_1year img{
+    width: 14rem;
+    height: 14rem ;
+    padding: 0.8rem;
+    border: 2px dotted var(--black);
+    border-radius: 50%;
+}
+#why_1year p{
+   
+    font-family: Outfit;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.52rem;
+}
+
+#why_fibre{
+    width: 15.4rem;
+    height: 18.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#why_fibre img{
+    width: 14rem;
+    height: 14rem ;
+    padding: 0.8rem;
+    border: 2px dotted var(--black);
+    border-radius: 50%;
+}
+#why_fibre p{
+    
+    font-family: Outfit;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.52rem;
+}
+
+#why_sustainable{
+    width: 15.4rem;
+    height: 18.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+#why_sustainable img{
+    width: 14rem;
+    height: 14rem ;
+    padding: 0.8rem;
+    border: 2px dotted var(--black);
+    border-radius: 50%;
+}
+#why_sustainable p{
+    font-family: Outfit;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.52rem;
+}
+
+
+#why_refrigeration{
+    width: 15.4rem;
+    height: 18.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#why_refrigeration img{
+    width: 14rem;
+    height: 14rem ;
+    padding: 0.8rem;
+    border: 2px dotted var(--black);
+    border-radius: 50%;
+}
+#why_refrigeration p{
+    
+    font-family: Outfit;
+    font-size: 1.9rem;
+    font-weight: 700;
+    line-height: 2.52rem;
+}
+
+#why_preservation{
+    width: 15.4rem;
+    height: 18.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#why_preservation img{
+    width: 14rem;
+    height: 14rem ;
+    padding: 0.8rem;
+    border: 2px dotted var(--black);
+    border-radius: 50%;
+}
+#why_preservation p{
+    
+    
+    font-family: Outfit;
+    font-size: 1.9rem;
+    font-weight: 700;
+    line-height: 2.52rem;
+}
+#why_btm{
+    width: 106.5rem;
+    height: 74.1rem;
+    margin-top: 5rem;
+}
+#why_media_logo{
+    width: 106.5rem;
+    height: 5.5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+#why_media_logo img{
+    width: 43.93rem;
+    height: 7rem;
+}
+#why_media{
+    position: relative;
+    width:106.5rem ;
+    height: 43.8rem;
+    background-color: var(--sub-main);
+    margin-top: 3.4rem;
+}
+#why_media img{
+    width: 100%;
+    height: 100%;
+    background-position: cover;
+
+}
+#why_overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: var(--light-black);
+    opacity: 0;
+}
+#why_overlay button{
+    position: absolute;
+    width: 21.8rem;
+    height: 4.7rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+    color: var(--cream);
+    border: 0.1rem solid var(--cream);
+    background-color: transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+#why_media:hover #why_overlay{
+    opacity: 1;
+}
+#why_media #why_overlay button:hover{
+    background-color: var(--cream);
+    color: var(--black);
+}
+#why_seen-on{
+    display: flex;
+    margin: 3.2rem 0 1.2rem 0; 
+    justify-content: space-between;
+    align-items: center;
+}
+#why_hospitality{
+    width:34.5rem ;
+    height: 18.5rem;
+    padding: 2rem;
+    background-color: var(--sub-main);
+    display: flex;
+    align-items: center;
+    gap: 3.6rem;
+    border-radius: 1.6rem;
+    -webkit-border-radius: 1.6rem;
+    -moz-border-radius: 1.6rem;
+    -ms-border-radius: 1.6rem;
+    -o-border-radius: 1.6rem;
+}
+#why_hospitality:hover{
+    background-color: var(--main);
+    color: var(--cream);
+}
+#why_hospitality img{
+    width: 12.4rem;
+    height: 12.6rem;
+}
+#why_hos-text{
+    display: flex;
+    flex-direction: column;
+}
+#why_hos-text p:nth-child(1){
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 2.772rem;
+    font-family: Outfit;
+}
+#why_hos-text p:nth-child(2){
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.6rem;
+    font-family: Outfit;
+}
+#why_vogue{
+    width: 34.5rem;
+    height: 18.5rem;
+    padding: 2rem;
+    background-color:var(--sub-main);
+    display: flex;
+    align-items: center;
+    gap: 3.6rem;
+    border-radius: 1.6rem;
+    -webkit-border-radius: 1.6rem;
+    -moz-border-radius: 1.6rem;
+    -ms-border-radius: 1.6rem;
+    -o-border-radius: 1.6rem;
+}
+#why_vogue:hover{
+    background-color: var(--main);
+    color: var(--cream);
+}
+
+#why_vogue img{
+    width: 12.3rem;
+    height: 6.9rem;
+}
+#why_vogue-text{
+    display: flex;
+    flex-direction: column;
+}
+#why_vogue-text p:nth-child(1){
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 2.772rem;
+    font-family: Outfit;
+}
+#why_vogue-text p:nth-child(2){
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.6rem;
+    font-family: Outfit;
+}
+
+#why_better{
+    width: 34.5rem;
+    height:18.5rem ;
+    padding: 2rem;
+    background-color: var(--sub-main);
+    display: flex;
+    align-items: center;
+    gap: 3.6rem;
+    border-radius: 1.6rem;
+    -webkit-border-radius: 1.6rem;
+    -moz-border-radius: 1.6rem;
+    -ms-border-radius: 1.6rem;
+    -o-border-radius: 1.6rem;
+}
+#why_better:hover{
+    background-color: var(--main);
+    color: var(--cream);
+}
+
+#why_better img{
+    width: 15.9rem;
+    height: 14.2rem;
+}
+#why_better-text{
+    display: flex;
+    flex-direction: column;
+
+}
+#why_better-text p:nth-child(1){
+    font-size: 2.1rem;
+    font-weight: 700;
+    line-height: 2.772rem;
+    font-family: Outfit;
+}
+#why_better-text p:nth-child(2){
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.6rem;
+    font-family: Outfit;
+
+}
