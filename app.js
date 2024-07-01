@@ -59,7 +59,7 @@ let changeProd = () => {
         try {
             let response = await fetch('./product_details.json')
             let data = await response.json()
-            console.log(`Response : ${data}`);
+            // console.log(`Response : ${data}`);
 
             prodName.innerHTML = data.name[index]
             prodPrice.innerHTML = data.price[index]
@@ -128,6 +128,7 @@ function passNav(li){
 passNav(products)
 passNav(media)
 passNav(more)
+
 /* =================================RECIPE PAGE==================================*/
 document.addEventListener('DOMContentLoaded', () => {
     // Function to handle hover effects
