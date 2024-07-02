@@ -341,7 +341,7 @@ header{
 
 .custom-shape-divider-bottom-1719748528 {
     position: absolute;
-    bottom: -7%;
+    bottom: -3%;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -939,7 +939,7 @@ header{
     border-radius: 50%;
     background-color:var(--cream);
     top: 26.9rem;
-    left: calc(43.9rem + 23.5rem - 2rem);
+    left: calc(43.9rem + 22.7rem - 2rem);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -958,7 +958,7 @@ header{
     background-color:var(--cream);
     rotate: 180deg;
     top: 34.2rem;
-    left: calc(43.9rem + 23.5rem - 2rem);
+    left: calc(43.9rem + 22.7rem - 2rem);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1475,3 +1475,279 @@ header{
     font-family: Outfit;
 
 }
+
+/* ===============================FOOTER ============================== */
+#footer{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height:26.2rem ;
+    padding: 0px 187px;
+    /* background-color:var(--main) ; */
+
+}
+#top_footer{
+    width: 100%;
+    height: 15.5rem;
+    /* background-color: yellow; */
+    margin-top: 3.2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 9.6rem;
+}
+#left_top_footer{
+    width: 26.8rem;
+    height: 15.5rem;
+}
+#upper_left_footer{
+    width: 26.7rem;
+    height: 7.4rem;
+    display: flex;
+    gap: 2.9rem;
+    align-items: center;
+}
+#why_log0_footer{
+    width: 9.6rem;
+    height: 9.6rem;
+}
+#upper_left_footer img{
+    width: 100%;
+    height: 100%;
+}
+#social_footer{
+    width: 14.8rem;
+    height: 6.2rem; 
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#company_name {
+    width: 14.9rem;
+    height: 3.0rem;
+}
+#company_name p{
+    font-family: Outfit;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 3.024rem;
+    text-align: right;
+    color: var(--white);
+}
+#social_logo{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+#social_logo img{
+    width: 2rem;
+    height: 2rem;
+}
+#lower_left_footer{
+    width: 26.8rem;
+    height: 6rem;
+    /* background-color: #A0C239; */
+    margin-top: 2.1rem;
+}
+#lower_left_footer p{
+    font-family: Roboto;
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.6rem;
+    text-align: left;
+    color: var(--white);
+}
+
+#right_top_footer{
+    width: 70.5rem;
+    height: 13.8rem;
+    /* background-color: orange; */
+    display: flex;
+    /* justify-content: space-between; */
+}
+#right_section2{
+   margin-left: 12rem;
+}
+#right_section3{
+    margin-left: 12rem;
+ }
+ #right_section4{
+    margin-left: 8.8rem;
+ }
+.header h4{
+    font-family: Outfit;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3.1rem;
+    text-align: left;
+    color: var(--white);
+    
+}
+
+.list ul li{
+    font-family: Roboto;
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 2.5rem;
+    text-align: left;
+    color: var(--white);
+}
+#bottom_footer{
+    width: 108.8rem;
+    height: 3.4rem;
+    /* background-color: grey; */
+    margin-top: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.1rem;
+}
+#bottom_footer p{
+    font-family: Roboto;
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.289rem;
+    text-align: center;
+    color: var(--white);
+    
+}
+#bottom_footer p strong{
+    font-family: Roboto;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 12.89px;
+    text-align: center;
+    
+}
+/* footer {
+    background-color: #036230;
+    padding: 0px 187px;
+    color: white;
+    font-family: Outfit ;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    margin-top: 3.2rem;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.logo {
+    width: 9.6rem;
+    height: 9.6rem;
+    margin-right: 2.9rem;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons img {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1.7rem;
+    /* margin-left: 11rem; */
+/* } */
+/* adding my css */
+/* #wakao_food{
+    width: 14.9rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+    /* margin-left: 11rem; */
+/* } */
+/* #wakao_food h4{
+    font-size: 2.4rem;
+    font-weight: 700;
+
+}
+#logo_btm_para{
+    width:26.8rem ;
+    height: 6rem;
+    margin: 1rem 0 2.4rem 0;
+
+}
+#logo_btm_para p{
+    width: 100%;
+    height: 100%;
+    font-family: Roboto;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.9rem;
+    text-align: left;
+
+}
+#footer-section_1{
+    width: 26.8rem;
+    height: 15.5rem;
+    margin-right: 9.6rem;
+}
+
+#commpany{
+    width: 8.9rem;
+    height: 2.5rem;
+}
+
+.name h4{
+    width: 100%;
+    height: 100%;
+    font-family: Outfit;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25.2px;
+    text-align: left;
+    margin: 2.2rem 0   0 0;
+
+
+}
+.footer-section h4 {
+    font-size: 1.81rem;
+    margin-bottom: 1rem;
+
+
+#footer_right{
+    width: 70.5rem;
+    height: 13.8rem;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+    font-family: Roboto;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 2rem;
+    text-align: left;
+
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    color: rgb(216, 216, 216);
+    margin-top: 2rem;
+}
+
+.footer-bottom hr {
+    border: none;
+    border-top: 1px solid white;
+    margin-bottom: 1rem;
+}  */ 
