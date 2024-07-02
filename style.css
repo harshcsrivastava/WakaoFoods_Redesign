@@ -341,7 +341,7 @@ header{
 
 .custom-shape-divider-bottom-1719748528 {
     position: absolute;
-    bottom: -7%;
+    bottom: -3%;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -939,7 +939,7 @@ header{
     border-radius: 50%;
     background-color:var(--cream);
     top: 26.9rem;
-    left: calc(43.9rem + 23.5rem - 2rem);
+    left: calc(43.9rem + 22.7rem - 2rem);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -958,7 +958,7 @@ header{
     background-color:var(--cream);
     rotate: 180deg;
     top: 34.2rem;
-    left: calc(43.9rem + 23.5rem - 2rem);
+    left: calc(43.9rem + 22.7rem - 2rem);
     display: flex;
     justify-content: center;
     align-items: center;
