@@ -587,6 +587,8 @@ header {
     color: var(--main);
 }
 
+
+
 /*  */
 .custom-shape-divider-2-bottom-1719748528 {
     position: absolute;
@@ -1003,6 +1005,8 @@ header {
 
 #ben_arrbtm {
     position: absolute;
+    /* position: sticky; */
+    /* position: fixed; */
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
@@ -1010,6 +1014,10 @@ header {
     top: 26.9rem;
     /* left: calc(43.9rem + 22.7rem - 2rem); */
     left: calc(43.9rem + 22.7rem - 0.4rem);
+    background-color:var(--cream);
+    top: 20rem;
+    /* left: calc(43.9rem + 18rem - 2rem); */
+    left: 46.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1023,14 +1031,15 @@ header {
 
 #ben_arrtop {
     position: absolute;
+    /* position: sticky; */
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
     background-color: var(--cream);
     rotate: 180deg;
-    top: 34.2rem;
-    left: calc(43.9rem + 22.7rem - 0.4rem);
-    /* left: calc(43.9rem + 22.7rem - 5.3rem); */
+    top: 28rem;
+    left: 46.5rem;
+    /* left: calc(43.9rem + 22.7rem - 2rem); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1703,6 +1712,7 @@ header {
     /* justify-content: space-between; */
 }
 
+
 #right_section2 {
     margin-left: 12rem;
 }
@@ -1762,7 +1772,71 @@ header {
     text-align: center;
 
 }
-
+@media screen and (max-width:1280px){
+    #footer{
+        height: 30rem;
+        gap: 3.5rem;
+        /* background-color: skyblue; */
+        /* padding: 0 170px; */
+    }
+    #top_footer{
+        justify-content: center;
+    }
+    #right_top_footer{
+        height: 18rem;
+        /* background-color: orange; */
+    }
+    .header h4{
+        font-size: 1.5rem;
+    }
+    .list ul li{
+        font-size: 1.1rem;
+    }
+    #right_section1{
+        width: 25%;
+        height: 100%;
+        /* background-color: #A0C239; */
+    }
+    #right_section2{
+        margin-left: 10rem
+    }
+    #right_section3 {
+        margin-left:10rem ;
+       
+    }
+    /* #right_section1 ul li{
+        line-height: 1.9rem;
+    } */
+    #right_section4{
+        width: 100%;
+        padding-right: 0;
+        margin-left: 6rem;
+    }
+    #right_section3 ul li{
+        line-height: 1.8rem;
+    }
+    #right_section4 ul li{
+        line-height: 2rem;
+    }
+    #bottom_footer{
+        width: 100%;
+        height: 10rem;
+        /* background-color: pink; */
+        left: 0;
+        padding-left: 0;
+        gap: 2rem;
+    }
+}
+@media  screen and (max-width:1100px){
+    #footer{
+        /* background-color: orange; */
+        padding: 0 100px;
+    }
+ 
+   #right_section2{
+    margin-left: 7rem;
+   }
+}
 /* footer {
     background-color: #036230;
     padding: 0px 187px;
@@ -1776,589 +1850,177 @@ header {
     gap: 2rem;
     margin-top: 3.2rem;
 }
-
-.footer-section {
-    display: flex;
-    flex-direction: column;
+   #right_section3 {
+    margin-left: 7rem ;
+   
 }
-
-.footer-logo {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
 }
-
-.logo {
-    width: 9.6rem;
-    height: 9.6rem;
-    margin-right: 2.9rem;
-}
-
-.social-icons {
-    display: flex;
-}
-
-.social-icons img {
-    width: 2rem;
-    height: 2rem;
-    margin-right: 1.7rem;
-    /* margin-left: 11rem; */
-/* } */
-/* adding my css */
-/* #wakao_food{
-    width: 14.9rem;
-    height: 3rem;
-    margin-bottom: 1rem;
-    /* margin-left: 11rem; */
-/* } */
-/* #wakao_food h4{
-    font-size: 2.4rem;
-    font-weight: 700;
-
-}
-#logo_btm_para{
-    width:26.8rem ;
-    height: 6rem;
-    margin: 1rem 0 2.4rem 0;
-
-}
-#logo_btm_para p{
-    width: 100%;
-    height: 100%;
-    font-family: Roboto;
-    font-size: 1.3rem;
-    font-weight: 400;
-    line-height: 1.9rem;
-    text-align: left;
-
-}
-#footer-section_1{
-    width: 26.8rem;
-    height: 15.5rem;
-    margin-right: 9.6rem;
-}
-
-#commpany{
-    width: 8.9rem;
-    height: 2.5rem;
-}
-
-.name h4{
-    width: 100%;
-    height: 100%;
-    font-family: Outfit;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 25.2px;
-    text-align: left;
-    margin: 2.2rem 0   0 0;
-
-
-}
-.footer-section h4 {
-    font-size: 1.81rem;
-    margin-bottom: 1rem;
-
-
-#footer_right{
-    width: 70.5rem;
-    height: 13.8rem;
-    display: flex;
-    justify-content: space-between;
-}
-.footer-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-section ul li {
-    margin-bottom: 0.5rem;
-    font-family: Roboto;
-    font-size: 1.3rem;
-    font-weight: 400;
-    line-height: 2rem;
-    text-align: left;
-
-}
-
-.footer-section ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.footer-bottom {
-    text-align: center;
-    color: rgb(216, 216, 216);
-    margin-top: 2rem;
-}
-
-.footer-bottom hr {
-    border: none;
-    border-top: 1px solid white;
-    margin-bottom: 1rem;
-}  */
-
-
-
-/* making website responsive*/
-@media(max-width:1286px) {
-    html {
-        font-size: 54%;
-    }
-
-    .product-wheel img {
-        width: 81%;
-    }
-
-    header {
-        gap: 4rem;
-
-        & .mid {
-            width: 32rem;
-        }
-    }
-
-    .head {
-        gap: 12rem;
-
-        & .hero-details {
-            width: 60%;
-
-            & .heading h1 {
-                font-size: 5rem;
-            }
-        }
-    }
-
-    #recipe_card {
-        gap: 20rem;
-
-        & .recipe_allcard {
+    /* @media screen and (max-width:376px){
+        #footer{
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 70rem;
+            background-color: #A0C239;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 80%;
+            flex-direction: column;
+            gap: 0;
         }
-
-        & .recipe_allcard img {
-            width: 82%;
-        }
-    }
-
-    #ben_button {
-        & #ben_but1 {
-            font-size: 98%;
-
-            & img {
-                width: 15%;
-            }
-        }
-
-        & #ben_but2 {
-            font-size: 98%;
-
-            & img {
-                width: 15%;
-            }
-        }
-    }
-
-    #right_top_footer {
-        width: 50%;
-    }
-
-}
-
-@media(max-width:1100px) {
-    html {
-        font-size: 52%;
-    }
-
-    .product-wheel img {
-        width: 84%;
-    }
-
-    header {
-        gap: 4rem;
-
-        & .first {
-            width: 50rem;
-        }
-
-        & .mid {
-            width: 34rem;
-        }
-    }
-
-    .head {
-        gap: 14rem;
-
-        & .hero-details {
-            width: 40rem;
-
-            & .heading h1 {
-                font-size: 4rem;
-            }
-        }
-    }
-
-    #recipe_card {
-        gap: 26rem;
-
-        & .recipe_allcard {
+        #top_footer{
+            width: 100%;
+            height: 70rem;
+            background-color: pink;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 65%;
+            flex-direction: column;
+            margin:0 ;
+            gap: 10rem;
         }
-
-        & .recipe_allcard img {
-            width: 89%;
-        }
-    }
-
-    #recipe-logo {
-        position: relative;
-        left: -16%;
-    }
-
-    #logo_text {
-        position: relative;
-        left: -16%;
-    }
-
-    #ben_button {
-        & #ben_but1 {
-            font-size: 98%;
-
-            & img {
-                width: 13%;
-            }
-        }
-
-        & #ben_but2 {
-            font-size: 98%;
-
-            & img {
-                width: 13%;
-            }
-        }
-    }
-
-    #ben_arrbtm {
-        left: calc(43.9rem + 22.7rem - 11.3rem);
-
-    }
-
-    #ben_arrtop {
-        left: calc(43.9rem + 22.7rem - 11.3rem);
-
-    }
-
-}
-
-@media(max-width:990px) {
-
-    .product-wheel img {
-        width: 82%;
-        position: relative;
-        left: 0;
-    }
-
-    header {
-        gap: 9rem;
-        padding-right: 94px;
-
-        & .first {
-            width: 67rem;
-        }
-
-        & .last {
-            width: 0rem;
-        }
-    }
-
-    .head {
-        gap: 14rem;
-
-        & .hero-details {
-            width: 44%;
-
-            & .heading {
-                width: 35rem;
-
-                h1 {
-                    font-size: 4.9rem;
-                }
-            }
-        }
-    }
-
-    .logo-section {
-        & img {
-            width: 98%;
-        }
-    }
-
-    .callToAction {
-        position: absolute;
-        left: -23%;
-        top: 45%;
-    }
-
-    .mid {
-        width: 31rem;
-
-    }
-
-    #recipe_card {
-        /* gap: 35rem; */
-
-        & .recipe_allcard {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 85%;
-            scale: 0.9;
-        }
-
-        & .recipe_allcard img {
-            width: 95%;
-        }
-    }
-
-    #recipe-logo {
-        position: relative;
-        left: -16%;
-    }
-
-    #logo_text {
-        position: relative;
-        left: -16%;
-    }
-
-    #ben_button {
-        & #ben_but1 {
-            font-size: 98%;
-
-            & img {
-                width: 13%;
-            }
-        }
-
-        & #ben_but2 {
-            font-size: 98%;
-
-            & img {
-                width: 13%;
-            }
-        }
-    }
-
-    #ben_arrbtm {
-        left: calc(43.9rem + 22.7rem - 11.3rem);
-
-    }
-
-    #ben_arrtop {
-        left: calc(43.9rem + 22.7rem - 11.3rem);
-
-    }
-
-}
-
-@media(max-width:700px) {
-    html {
-        font-size: 47%;
-    }
-
-    header {
-
-        & .last {
-            width: 0rem;
-            height: 0rem;
-
-            & .callToAction {
-                width: 0rem;
-                height: 0rem;
-            }
-        }
-    }
-
-    .products {
-        height: 100vh;
-
-        & .logo-section {
-            position: relative;
-            right: 0%;
-            top: -6%;
+        #left_top_footer{
+            width: 100%;
+            height: 40%;
+            padding: 3rem;
+            background-color: lightsalmon;
 
         }
-
-        & .product-item--section {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            overflow-y: scroll;
-            gap: 6rem;
-
-            & .item-section {
-                display: grid;
-                place-items: center;
-                width: 78rem;
-                padding-top: 20rem;
-                scale: 1.12;
-            }
+        #upper_left_footer{
+            width: 100%;
+            height: 50%; */
+            /* padding: 2rem; */
+            /* background-color: lightgoldenrodyellow;
+        }
+        #right_top_footer{
+            width: 100%;
+            height: 60%;
+            padding:0 ; */
+            /* background-color: lightgrey; */
+            /* display: grid;
+            grid-template-columns: repeat(2,1fr);
+            column-gap: 1rem;
+            
+        }
+        #right_section1{
+            margin-left: 7rem;
+        }
+        #right_section2{
+            margin-top: 0;
+            margin-left: 2rem;
 
         }
-    }
+        #right_section4{
+            margin: 0;
+            margin-left: 2rem;
+        }
+        #bottom_footer{
+            width: 100%;
+            background-color: aqua;
+            margin-top: 0;
+        }
+        #bottom_footer p{
+            font-size: 1rem;
 
-    .custom-shape-divider-2-bottom-1719748528 {
-        position: absolute;
-        bottom: -7%;
-        left: 0;
-        width: 100%;
-        overflow: hidden;
-        line-height: 0;
-    }
-
-    .custom-shape-divider-2-bottom-1719748528 svg {
-        position: relative;
-        display: block;
-        width: calc(146% + 1.3px);
-        height: 90px;
-    }
-
-    .custom-shape-divider-2-bottom-1719748528 .shape-fill {
-        fill: var(--cream);
-    }
-
-    .flip {
-        transform: scale(1, -1);
-    }
-    #why_main{
-        height: 144rem;
-    }
-
-    #why_top {
-        height: 80rem;
-        & img{
-            position: relative;
-            left: 10%;
-            top: -2;
-            scale: 0.9;
+        }
+    } */
+    @media screen and (max-width:700px){
+        #footer{
+            width: 100%;
+            height: 40rem;
+            padding: 0px 60px;
+            /* background-color: aquamarine; */
+            gap: 2rem;
+        }
+        #top_footer{
+            width: 100%;
+            height: 30rem;
+            /* background-color: pink;   */
+           display: flex;
+           justify-content: space-between;
+           gap: 0rem;
+           
+           
         }
         
-        & #why_reason {
-            display: grid;
-            grid-template-columns: repeat(2,1.2fr);
-            gap: 4rem;
-            place-items: center;
-            width: 90rem;
-            height: 50rem;
-            padding-left: 15rem;
-            & img{
-                scale: 1;
-            }
+        
+        #left_top_footer{
+            /* width: 50%; */
+            /* background-color: lightgrey; */
+            align-self: center;
+           
+        
+           
         }
-    }
-    #why_btm{
-        scale: 0.76;
-        margin-top: -3rem;
-    }
-    #ben_back{
-        scale: 0.7;
-    }
-    #recipe_card{
-        display: flex;
-        flex-wrap: wrap;
-        overflow-y: scroll;
-        justify-content: center;
-        align-items: center;
-        padding-right: 40rem;
-        scale: 1.07;
-        width: 86rem;
-        gap: 16rem;
-        & .recipe_allcard{
-            scale: 0.9;
+        #right_top_footer{
+            /* width: 50%; */
+            height: 100%;
+            /* background-color: lightsalmon; */
+           display: grid;
+           grid-template-columns: repeat(2,1fr);
+
         }
+        #upper_left_footer{
+            margin-bottom: 5rem;
+        }
+        #right_section1{
+           margin: 2rem 0 0 5rem;
+
+        }
+        #right_section2{
+            margin: 2rem 0 0 3rem;
+        }
+        #right_section3{
+            margin: 0 0 0 5rem;
+        }
+        #right_section4{
+            margin: 0 0 0 3rem;
+        }
+        #bottom_footer{
+            width: 100%;
+            gap: 1rem;
+            /* background-color: skyblue; */
+            margin-top: 0rem ;
+        }
+       
     }
-    #benefits{
-        padding: 80px 180px 0 200px;
-    }
-    .recipe-title{
-        position: relative;
-        top: -10%;
-        left: -17%;
-    }
+   /* #footer{
+    padding: 0;
+    margin: 0;
+    height:70rem ;
+    display: flex;
+    flex-direction: column;
+    background-color: pink;
+   }
+   #top_footer{
+    height: 60rem;
+    margin: 0;
+    padding: 0;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #A0C239;
+    align-items: center;
+  
+    justify-content:space-evenly;
+
+   }
+   #upper_left_footer{
+    margin-top: 0;
+    height: 10rem; */
+   /* }
+   #bottom_footer{
+    background-color: greenyellow;
+   }
+  #left_top_footer{
+    background-color: aqua;
+    margin-top: 0;
+   }
+   #right_top_footer{
+    width: 30rem;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: skyblue;
+   } */
 
 
+    
 
-}
-/*
-@media (max-width:376px) {
-    /* html{
-        font-size: 43%;
-    } */
-     /*
-    .products{
-        & .logo-section{
-            position: relative;
-            top: -1%;
-            left: 0%;
-            scale: 0.62;
-        }
-        & .product-item--section{
-            & .item-section {
-                scale: 1.02;
-                position: relative;
-                left: -7%;
-            }
-        }
-    }
-     #benefits{
-        scale: 0.45;
-        position: relative;
-        left: -16.5%;
-     }
-     #why_reason{
-        /* grid-template-columns: repeat(2,1.5fr); */
-        /* padding-left: 27.5rem; */
-        /*
-        padding-right: 25rem;
-        scale: 0.8;
-        position: relative;
-        left: 4%;
-     }
-     #why_top{
-        & #why_wakao_image{
-            position: relative;
-            left: 22%;
-            scale: 0.67;
-        }
-     } 
-     #why_media_logo img{
-        position: relative;
-        right: 32%;
-        scale: 0.7;
-     } 
-     #why_media{
-        margin-top: -8rem;
-        scale: 0.42;
-        position: relative;
-        left: -9%;
-     }
-     #why_btm{
-        & #why_seen-on{
-            overflow-y: scroll;
-            display: flex;
-            /* flex-wrap: wrap; */
-            /*
-            justify-content: center;
-            align-items: center;
-            width: 70rem;
-        }
 
-     }
-}*/
