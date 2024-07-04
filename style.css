@@ -1735,7 +1735,7 @@ header {
 }
 
 #bottom_footer {
-    width: 108.8rem;
+    border-top: solid 0.5px var(--cream);
     height: 3.4rem;
     /* background-color: grey; */
     margin-top: 2.4rem;
@@ -1751,6 +1751,7 @@ header {
     line-height: 1.289rem;
     text-align: center;
     color: var(--white);
+    padding: 2rem 0;
 
 }
 
@@ -2034,7 +2035,7 @@ header {
     html {
         font-size: 47%;
     }
-
+/* 
     header {
 
         & .last {
@@ -2046,7 +2047,7 @@ header {
                 height: 0rem;
             }
         }
-    }
+    } */
 
     .products {
         height: 100vh;
@@ -2159,72 +2160,7 @@ header {
 
 
 }
-/*
-@media (max-width:376px) {
-    /* html{
-        font-size: 43%;
-    } */
-     /*
-    .products{
-        & .logo-section{
-            position: relative;
-            top: -1%;
-            left: 0%;
-            scale: 0.62;
-        }
-        & .product-item--section{
-            & .item-section {
-                scale: 1.02;
-                position: relative;
-                left: -7%;
-            }
-        }
-    }
-     #benefits{
-        scale: 0.45;
-        position: relative;
-        left: -16.5%;
-     }
-     #why_reason{
-        /* grid-template-columns: repeat(2,1.5fr); */
-        /* padding-left: 27.5rem; */
-        /*
-        padding-right: 25rem;
-        scale: 0.8;
-        position: relative;
-        left: 4%;
-     }
-     #why_top{
-        & #why_wakao_image{
-            position: relative;
-            left: 22%;
-            scale: 0.67;
-        }
-     } 
-     #why_media_logo img{
-        position: relative;
-        right: 32%;
-        scale: 0.7;
-     } 
-     #why_media{
-        margin-top: -8rem;
-        scale: 0.42;
-        position: relative;
-        left: -9%;
-     }
-     #why_btm{
-        & #why_seen-on{
-            overflow-y: scroll;
-            display: flex;
-            /* flex-wrap: wrap; */
-            /*
-            justify-content: center;
-            align-items: center;
-            width: 70rem;
-        }
 
-     }
-}*/
 
 /* ===============================Responsive============================== */
 .nav.openSearch .nav-links a {
@@ -2250,14 +2186,6 @@ header {
     opacity: 1;
     pointer-events: auto;
   }
-  /* .search-box .search-icon {
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    left: 15px;
-    color: var(--cream);
-    transform: translateY(-50%);
-  } */
   .search-box input {
     height: 100%;
     width: 35%;
@@ -2278,14 +2206,6 @@ header {
     display: none;
   }
 
-/* @media (width <= 420px) {
-    html{
-        font-size: 40%;
-    }
-    nav, header{
-        padding: 0;
-    }
-} */
 @media screen and (max-width: 768px) {
     html{
         font-size: 40%;
@@ -2305,7 +2225,6 @@ header {
             width: 44rem;
             justify-content: start;
             align-items: center;
-            /* height: 40vh; */
         }
       }
 
@@ -2322,7 +2241,6 @@ header {
       left: -100%;
       height: 100vh;
       max-width: 3200px;
-      /* width: 100vw; */
       padding-top: 100px;
       row-gap: 30px;
       flex-direction: column;
@@ -2357,40 +2275,64 @@ header {
 
     header{
         padding: 0 0px;
-        flex-direction: column;
+        gap: 0;
+        justify-content: normal;
 
-        & .first{
-            padding: 16rem 2rem 4rem 2rem;
-            width: 100%;
+        & .first{ 
+            padding: 22rem 6rem 4rem 6rem;
+            width: 58vw;
             height: 75%;
+            justify-content: space-around;
         }
-
         & .mid{
-            width: 100vw;
+            width: 18vw;
             height: 100%;
 
             & .product-wheel{
-                top: -112%;
-                width: 100vw;
-                height: 44vh;
-                & .prod{
-                    height: 30vh;
-                }
+                height: 68vh;
             }
         }
 
         & .last{
-            padding-top: 2rem;
-            width: 100%;
-            height: 100%;
-            /* display: flex; */
+            padding-top: 40rem;
+            width: 20vw;
+            height: 30%;
 
             & .callToAction{
-                & .button-carrier{
-                    flex-direction: row;
-                    gap: 3rem;
+                position: static;
+            }
+        } 
+    }
+
+    #footer{
+        padding: 0 0;
+        height: 100%;
+        & #top_footer{
+            flex-direction: column;
+            justify-content: normal;
+            align-items: center;
+            gap: 4rem;
+
+            & #left_top_footer{
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                gap: 8rem;
+
+                & #lower_left_footer{
+                    margin-top: 0;
                 }
             }
+            & #right_top_footer{
+                flex-wrap: wrap;
+                width: 100%;
+                justify-content: center;
+            }        
+        }
+        & #bottom_footer{
+            position: relative;
+            bottom: -80px;
         }
     }
   }
