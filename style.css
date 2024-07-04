@@ -587,6 +587,8 @@ header {
     color: var(--main);
 }
 
+
+
 /*  */
 .custom-shape-divider-2-bottom-1719748528 {
     position: absolute;
@@ -1003,6 +1005,8 @@ header {
 
 #ben_arrbtm {
     position: absolute;
+    /* position: sticky; */
+    /* position: fixed; */
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
@@ -1010,6 +1014,10 @@ header {
     top: 26.9rem;
     /* left: calc(43.9rem + 22.7rem - 2rem); */
     left: calc(43.9rem + 22.7rem - 0.4rem);
+    background-color:var(--cream);
+    top: 20rem;
+    /* left: calc(43.9rem + 18rem - 2rem); */
+    left: 46.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1023,14 +1031,15 @@ header {
 
 #ben_arrtop {
     position: absolute;
+    /* position: sticky; */
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
     background-color: var(--cream);
     rotate: 180deg;
-    top: 34.2rem;
-    left: calc(43.9rem + 22.7rem - 0.4rem);
-    /* left: calc(43.9rem + 22.7rem - 5.3rem); */
+    top: 28rem;
+    left: 46.5rem;
+    /* left: calc(43.9rem + 22.7rem - 2rem); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1703,6 +1712,7 @@ header {
     /* justify-content: space-between; */
 }
 
+
 #right_section2 {
     margin-left: 12rem;
 }
@@ -1799,146 +1809,106 @@ header {
 
         & .recipe_allcard {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 80%;
+            flex-direction: column;
+            margin:0 ;
+            gap: 10rem;
         }
+        #left_top_footer{
+            width: 100%;
+            height: 40%;
+            padding: 3rem;
+            background-color: lightsalmon;
 
-        & .recipe_allcard img {
-            width: 82%;
         }
-    }
-
-    #ben_button {
-        & #ben_but1 {
-            font-size: 98%;
-
-            & img {
-                width: 15%;
-            }
+        #upper_left_footer{
+            width: 100%;
+            height: 50%; */
+            /* padding: 2rem; */
+            /* background-color: lightgoldenrodyellow;
         }
-
-        & #ben_but2 {
-            font-size: 98%;
-
-            & img {
-                width: 15%;
-            }
+        #right_top_footer{
+            width: 100%;
+            height: 60%;
+            padding:0 ; */
+            /* background-color: lightgrey; */
+            /* display: grid;
+            grid-template-columns: repeat(2,1fr);
+            column-gap: 1rem;
+            
         }
-    }
-
-    #right_top_footer {
-        width: 50%;
-    }
-
-}
-
-@media(max-width:1100px) {
-    html {
-        font-size: 52%;
-    }
-
-    .product-wheel img {
-        width: 84%;
-    }
-
-    header {
-        gap: 4rem;
-
-        & .first {
-            width: 50rem;
+        #right_section1{
+            margin-left: 7rem;
         }
+        #right_section2{
+            margin-top: 0;
+            margin-left: 2rem;
 
-        & .mid {
-            width: 34rem;
         }
-    }
-
-    .head {
-        gap: 14rem;
-
-        & .hero-details {
-            width: 40rem;
-
-            & .heading h1 {
-                font-size: 4rem;
-            }
+        #right_section4{
+            margin: 0;
+            margin-left: 2rem;
         }
-    }
-
-    #recipe_card {
-        gap: 26rem;
-
-        & .recipe_allcard {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 65%;
+        #bottom_footer{
+            width: 100%;
+            background-color: aqua;
+            margin-top: 0;
         }
+        #bottom_footer p{
+            font-size: 1rem;
 
-        & .recipe_allcard img {
-            width: 89%;
         }
-    }
-
-    #recipe-logo {
-        position: relative;
-        left: -16%;
-    }
-
-    #logo_text {
-        position: relative;
-        left: -16%;
-    }
-
-    #ben_button {
-        & #ben_but1 {
-            font-size: 98%;
-
-            & img {
-                width: 13%;
-            }
+    } */
+    @media screen and (max-width:700px){
+        #footer{
+            width: 100%;
+            height: 40rem;
+            padding: 0px 60px;
+            /* background-color: aquamarine; */
+            gap: 2rem;
         }
-
-        & #ben_but2 {
-            font-size: 98%;
-
-            & img {
-                width: 13%;
-            }
+        #top_footer{
+            width: 100%;
+            height: 30rem;
+            /* background-color: pink;   */
+           display: flex;
+           justify-content: space-between;
+           gap: 0rem;
+           
+           
         }
-    }
-
-    #ben_arrbtm {
-        left: calc(43.9rem + 22.7rem - 11.3rem);
-
-    }
-
-    #ben_arrtop {
-        left: calc(43.9rem + 22.7rem - 11.3rem);
-
-    }
-
-}
-
-@media(max-width:990px) {
-
-    .product-wheel img {
-        width: 82%;
-        position: relative;
-        left: 0;
-    }
-
-    header {
-        gap: 9rem;
-        padding-right: 94px;
-
-        & .first {
-            width: 67rem;
+        
+        
+        #left_top_footer{
+            /* width: 50%; */
+            /* background-color: lightgrey; */
+            align-self: center;
+           
+        
+           
         }
+        #right_top_footer{
+            /* width: 50%; */
+            height: 100%;
+            /* background-color: lightsalmon; */
+           display: grid;
+           grid-template-columns: repeat(2,1fr);
 
-        & .last {
-            width: 0rem;
+        }
+        #upper_left_footer{
+            margin-bottom: 5rem;
+        }
+        #right_section1{
+           margin: 2rem 0 0 5rem;
+
+        }
+        #right_section2{
+            margin: 2rem 0 0 3rem;
+        }
+        #right_section3{
+            margin: 0 0 0 5rem;
+        }
+        #right_section4{
+            margin: 0 0 0 3rem;
         }
     }
 
