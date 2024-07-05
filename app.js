@@ -129,6 +129,17 @@ passNav(products)
 passNav(media)
 passNav(more)
 
+let nav_btn = document.getElementById('nav-btn')
+console.log(nav_btn);
+
+document.addEventListener('scroll', () => {
+    if (window.scrollY > 0) {
+        nav_btn.style.color = '#0b0b0b';
+    } else {
+        nav_btn.style.color = '#fffae9';
+
+    }
+})
 /* =================================RECIPE PAGE==================================*/
 document.addEventListener('DOMContentLoaded', () => {
     // Function to handle hover effects
