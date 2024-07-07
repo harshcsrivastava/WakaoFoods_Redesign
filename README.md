@@ -31,8 +31,8 @@ This project was developed as part of the [ReImagine Hackathon](https://reimagin
 - **Md Arsalan** (Team Captain) - [GitHub](https://github.com/hashmiarsa), [LinkedIn](https://www.linkedin.com/in/md-arsalan-15b4ab27b/)
 - **Harsh Chandra Srivastava** - [GitHub](https://github.com/harshcsrivastava), [LinkedIn](https://www.linkedin.com/in/harshcsrivastava/)
 - **Ayush Arya** - [GitHub](https://github.com/ayusharya1), [LinkedIn](https://www.linkedin.com/in/ayush-arya-b261862a8/)
-- **Md Sharim Alam** - [GitHub](https://github.com/sharim07), [LinkedIn](https://www.linkedin.com/in/sharim-mallik-4136b0316/)
+- **Md Sharim Alam** - [GitHub](https://github.com/sharim07), [LinkedIn](https://www.linkedin.com/in/md-sharim-alam-4136b0316/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)
 
-## [LIVE LINK](https://harshcsrivastava.github.io/reimagine_wakaoFoods/)
+## [LIVE LINK](https://elite-reimagine-wakaofoods.vercel.app/)
 
 Feel free to customize this template further based on specific details and achievements of your project. Happy coding!
